@@ -1,9 +1,9 @@
-import { Flex } from '@chakra-ui/react';
+import { Flex, Heading } from '@chakra-ui/react';
 
 export function App() {
   return (
     <Flex>
+      <Heading>Hello World!</Heading>
     </Flex>
-  )
+  );
 }
-
