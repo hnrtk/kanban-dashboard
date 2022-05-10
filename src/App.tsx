@@ -1,9 +1,5 @@
-import { Flex, Heading } from '@chakra-ui/react';
+import { Sidebar } from './components/organisms/Sidebar';
 
 export function App() {
-  return (
-    <Flex>
-      <Heading>Hello World!</Heading>
-    </Flex>
-  );
+  return <Sidebar />;
 }
