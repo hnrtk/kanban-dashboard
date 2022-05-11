@@ -12,7 +12,11 @@ export function TopSideItem({ name, icon }: Props) {
       aria-label={name}
       icon={icon}
       background='none'
-      _hover={{ background: 'blue.500' }}
+      borderRadius='8px'
+      _hover={{
+        background: 'blue.500',
+        transform: 'scale(1.1)',
+      }}
     />
   );
 }

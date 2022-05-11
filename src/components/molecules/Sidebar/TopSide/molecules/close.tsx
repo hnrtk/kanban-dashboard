@@ -15,9 +15,9 @@ const items = [
 
 export function TopSideClose(props: Props) {
   return (
-    <Flex as='nav' flexDir='column' alignItems='center' overflow='hidden'>
-      <VStack>
-        <AngularLogo size='32px' color='#f10' />
+    <Flex as='nav' flexDir='column' alignItems='center' overflow='hidden' w='100%'>
+      <VStack w='100%' h='100%'>
+        <AngularLogo size='52px' color='#f10' />
         <Divider orientation='horizontal' />
         <SidebarTrigger {...props} />
         <Divider orientation='horizontal' />

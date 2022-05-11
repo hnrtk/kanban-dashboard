@@ -6,7 +6,7 @@ interface Props {
 
 export function TopSideList({ children }: Props) {
   return (
-    <VStack as='nav' overflow='hidden'>
+    <VStack as='nav' h='100%' w='100%'>
       {children}
     </VStack>
   );
