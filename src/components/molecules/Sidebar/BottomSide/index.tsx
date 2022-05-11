@@ -1,7 +1,7 @@
 import { Avatar, Flex, VStack } from '@chakra-ui/react';
 import { SidebarThemeSwitcher } from '../../../atoms/Sidebar/ThemeSwitcher';
 
-export function SidebarFooter() {
+export function SidebarBottomSide() {
   return (
     <Flex flexDir='column'>
       <VStack spacing={4}>

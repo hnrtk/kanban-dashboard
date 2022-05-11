@@ -7,7 +7,7 @@ interface Props {
   onClick: () => void;
 }
 
-export function HeaderClose(props: Props) {
+export function TopSideClose(props: Props) {
   return (
     <Flex as='nav' flexDir='column' alignItems='center' overflow='hidden'>
       <AngularLogo size='32px' color='#f10' />

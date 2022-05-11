@@ -1,17 +1,12 @@
-import { Box } from '@chakra-ui/react';
-import { SidebarFooter } from '../../molecules/Sidebar/Footer';
-import { SidebarHeader } from '../../molecules/Sidebar/Header';
-import { SidebarMain } from '../../molecules/Sidebar/Main';
+import { SidebarBottomSide } from '../../molecules/Sidebar/BottomSide';
+import { SidebarTopSide } from '../../molecules/Sidebar/TopSide';
 import { SidebarContainer } from './container';
 
 export function Sidebar() {
   return (
     <SidebarContainer>
-      <Box>
-        <SidebarHeader />
-        <SidebarMain />
-      </Box>
-      <SidebarFooter />
+      <SidebarTopSide />
+      <SidebarBottomSide />
     </SidebarContainer>
   );
 }

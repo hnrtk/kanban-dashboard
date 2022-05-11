@@ -1,10 +1,10 @@
 import { useAppDispatch, useAppSelector } from '../../../../redux/hooks';
 import { changeSidebarState } from '../../../../redux/slices/Sidebar';
 
-import { HeaderClose } from './close';
-import { HeaderOpen } from './open';
+import { TopSideClose } from './close';
+import { TopSideOpen } from './open';
 
-export function SidebarHeader() {
+export function SidebarTopSide() {
   const dispatch = useAppDispatch();
   const open = useAppSelector((state) => state.sidebar.open);
 
@@ -13,8 +13,8 @@ export function SidebarHeader() {
   }
 
   return open ? (
-    <HeaderOpen open={open} onClick={handleSidebar} />
+    <TopSideOpen open={open} onClick={handleSidebar} />
   ) : (
-    <HeaderClose open={open} onClick={handleSidebar} />
+    <TopSideClose open={open} onClick={handleSidebar} />
   );
 }

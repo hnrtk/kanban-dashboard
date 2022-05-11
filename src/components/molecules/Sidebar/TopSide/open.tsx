@@ -7,7 +7,7 @@ interface Props {
   onClick: () => void;
 }
 
-export function HeaderOpen(props: Props) {
+export function TopSideOpen(props: Props) {
   return (
     <Flex
       as='nav'
@@ -18,7 +18,7 @@ export function HeaderOpen(props: Props) {
       overflow='hidden'
       px='4px'
     >
-      <HStack spacing={2} alignItems='center'>
+      <HStack spacing={2}>
         <AngularLogo size='32px' color='#f10' />
         <Text whiteSpace='nowrap'>Nome do projeto</Text>
       </HStack>
