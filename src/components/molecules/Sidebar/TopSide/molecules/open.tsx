@@ -1,6 +1,6 @@
-import { Flex, HStack, Text, Box } from '@chakra-ui/react';
+import { Flex, HStack, Text } from '@chakra-ui/react';
 import { AngularLogo } from 'phosphor-react';
-import { SidebarTrigger } from '../../../atoms/Sidebar/Trigger';
+import { SidebarTrigger } from '../../../../atoms/Sidebar/Trigger';
 
 interface Props {
   open: boolean;
