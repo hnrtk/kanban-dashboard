@@ -12,6 +12,7 @@ export function SidebarContainer({ children }: Props) {
     <Flex
       w={open ? '240px' : '76px'}
       borderRadius={open ? '24px' : '30px'}
+      border={open ? '1px solid green' : '1px solid transparent'}
       h='95vh'
       flexDir='column'
       justifyContent='space-between'
@@ -24,6 +25,7 @@ export function SidebarContainer({ children }: Props) {
       bg='red.900'
       boxShadow='0 4px 12px 0 rgba(0, 0, 0, 0.05)'
       transition='all 0.2s'
+      zIndex='modal'
     >
       {children}
     </Flex>
