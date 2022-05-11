@@ -1,15 +1,11 @@
-import { useAppSelector } from '../../../redux/hooks';
-
-import { SidebarFooter } from '../../molecules/SidebarFooter';
-import { SidebarHeader } from '../../molecules/SidebarHeader';
-import { SidebarMain } from '../../molecules/SidebarMain';
+import { SidebarFooter } from '../../molecules/Sidebar/Footer';
+import { SidebarHeader } from '../../molecules/Sidebar/Header';
+import { SidebarMain } from '../../molecules/Sidebar/Main';
 import { SidebarContainer } from './container';
 
 export function Sidebar() {
-  const open = useAppSelector((state) => state.sidebar.open);
-
   return (
-    <SidebarContainer open={open}>
+    <SidebarContainer>
       <SidebarHeader />
       <SidebarMain />
       <SidebarFooter />

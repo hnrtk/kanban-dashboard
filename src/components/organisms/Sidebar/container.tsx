@@ -1,11 +1,13 @@
 import { Flex } from '@chakra-ui/react';
+import { useAppSelector } from '../../../redux/hooks';
 
 interface Props {
-  open: boolean;
   children: React.ReactElement[];
 }
 
-export function SidebarContainer({ open, children }: Props) {
+export function SidebarContainer({ children }: Props) {
+  const open = useAppSelector((state) => state.sidebar.open);
+
   return (
     <Flex
       w={open ? '240px' : '76px'}
@@ -15,8 +17,8 @@ export function SidebarContainer({ open, children }: Props) {
       justifyContent='space-between'
       alignItems='center'
       pos='sticky'
-      left='5'
-      mt='5'
+      left={5}
+      mt={5}
       py='28px'
       px='8px'
       bg='red.900'
