@@ -5,7 +5,8 @@ export function Content() {
     <Flex
       w='calc(100% - 9.5rem)'
       h='95vh'
-      bg='red.900'
+      bg='gray.700'
+      boxShadow='0 4px 12px 0 rgba(0, 0, 0, 0.05)'
       mt={5}
       p='20px'
       left='126px'

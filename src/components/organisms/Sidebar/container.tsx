@@ -22,7 +22,7 @@ export function SidebarContainer({ children }: Props) {
       mt={5}
       py='28px'
       px='8px'
-      bg='red.900'
+      bg='gray.700'
       boxShadow='0 4px 12px 0 rgba(0, 0, 0, 0.05)'
       transition='all 0.2s'
       zIndex='modal'
