@@ -1,5 +1,5 @@
 import { Flex } from '@chakra-ui/react';
-import { useAppSelector } from '../../../redux/hooks';
+import { useAppSelector } from '../../../../redux/hooks';
 
 interface Props {
   children: React.ReactElement[];

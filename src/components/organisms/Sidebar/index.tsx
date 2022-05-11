@@ -2,7 +2,7 @@ import { useAppDispatch, useAppSelector } from '../../../redux/hooks';
 import { changeSidebarState } from '../../../redux/slices/Sidebar';
 import { SidebarBottomSide } from '../../molecules/Sidebar/BottomSide';
 import { SidebarTopSide } from '../../molecules/Sidebar/TopSide';
-import { SidebarContainer } from './container';
+import { SidebarContainer } from '../../atoms/Sidebar/Container';
 
 export function Sidebar() {
   const dispatch = useAppDispatch();
