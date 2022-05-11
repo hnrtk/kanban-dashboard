@@ -1,5 +1,13 @@
-import { Flex } from '@chakra-ui/react';
+import { Avatar, Flex, VStack } from '@chakra-ui/react';
+import { SidebarThemeSwitcher } from '../../../atoms/Sidebar/ThemeSwitcher';
 
 export function SidebarFooter() {
-  return <Flex></Flex>;
+  return (
+    <Flex flexDir='column'>
+      <VStack spacing={4}>
+        <SidebarThemeSwitcher />
+        <Avatar src='https://bit.ly/broken-link' name='Henry Gabriel' w='40px' h='40px' />
+      </VStack>
+    </Flex>
+  );
 }

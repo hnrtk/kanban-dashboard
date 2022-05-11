@@ -4,7 +4,7 @@ import { Sidebar } from './components/organisms/Sidebar';
 
 export function App() {
   return (
-    <Flex width='100%'>
+    <Flex width='100vw'>
       <Sidebar />
       <Content />
     </Flex>

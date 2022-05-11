@@ -8,7 +8,7 @@ export function Content() {
       bg='red.900'
       mt={5}
       p='20px'
-      left={32}
+      left='126px'
       pos='absolute'
       borderRadius='30px'
       transition='all 0.2s'
