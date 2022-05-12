@@ -1,4 +1,4 @@
-import { TopSideClose } from '../TopSidebar/close';
+import { TopSideClose } from './Close';
 import { TopSideOpen } from '../TopSidebar/open';
 
 interface Props {
