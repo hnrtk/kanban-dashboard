@@ -1,5 +1,5 @@
 import { Avatar, Flex, VStack } from '@chakra-ui/react';
-import { SidebarThemeSwitcher } from '../../../atoms/Sidebar/ThemeSwitcher';
+import { SidebarThemeSwitcher } from '../ThemeSwitcher';
 
 export function SidebarBottomSide() {
   return (

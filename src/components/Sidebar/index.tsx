@@ -1,12 +1,16 @@
+import { useAppDispatch, useAppSelector } from '../../redux/hooks';
+import { changeSidebarState } from '../../redux/slices/Sidebar';
+import { SidebarBottomSide } from './BottomSidebar';
+import { SidebarTopSide } from './TopSidebar';
 import { Flex } from '@chakra-ui/react';
-import { useAppSelector } from '../../../../redux/hooks';
 
-interface Props {
-  children: React.ReactElement[];
-}
-
-export function SidebarContainer({ children }: Props) {
+export function Sidebar() {
+  const dispatch = useAppDispatch();
   const open = useAppSelector((state) => state.sidebar.open);
+
+  function handleSidebar() {
+    dispatch(changeSidebarState());
+  }
 
   return (
     <Flex
@@ -27,7 +31,8 @@ export function SidebarContainer({ children }: Props) {
       transition='all 0.2s'
       zIndex='modal'
     >
-      {children}
+      <SidebarTopSide open={open} onClick={handleSidebar} />
+      <SidebarBottomSide />
     </Flex>
   );
 }

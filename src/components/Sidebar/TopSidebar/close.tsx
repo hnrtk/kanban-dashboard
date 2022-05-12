@@ -1,8 +1,8 @@
 import { Flex, Divider, VStack } from '@chakra-ui/react';
 import { AngularLogo, Kanban, SquaresFour } from 'phosphor-react';
-import { SidebarTrigger } from '../../../../atoms/Sidebar/Trigger';
-import { TopSideItem } from '../atoms/item';
-import { TopSideList } from '../atoms/list';
+import { SidebarTrigger } from '../Trigger';
+import { TopSideItem } from './item';
+import { TopSideList } from './list';
 
 interface Props {
   open: boolean;

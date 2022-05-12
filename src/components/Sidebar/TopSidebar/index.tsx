@@ -1,5 +1,5 @@
-import { TopSideClose } from './molecules/close';
-import { TopSideOpen } from './molecules/open';
+import { TopSideClose } from '../TopSidebar/close';
+import { TopSideOpen } from '../TopSidebar/open';
 
 interface Props {
   open: boolean;

@@ -1,6 +1,6 @@
 import { Flex } from '@chakra-ui/react';
-import { Content } from './components/organisms/Content';
-import { Sidebar } from './components/organisms/Sidebar';
+import { Content } from './components/Content';
+import { Sidebar } from './components/Sidebar';
 
 export function App() {
   return (
