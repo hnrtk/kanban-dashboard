@@ -1,5 +1,12 @@
-import { AppRoutes } from './routes';
+import { Flex } from '@chakra-ui/react';
+import { Content } from './components/Content';
+import { Sidebar } from './components/Sidebar';
 
 export function App() {
-  return <AppRoutes />;
+  return (
+    <Flex width='100vw'>
+      <Sidebar />
+      <Content />
+    </Flex>
+  );
 }
