@@ -8,8 +8,8 @@ interface Props {
   onClick: () => void;
 }
 const items = [
-  { name: 'Dashboard', icon: <SquaresFour size='28px' /> },
-  { name: 'Projects', icon: <Kanban size='28px' /> },
+  { name: 'Dashboard', icon: <SquaresFour size='28px' />, route: '/dashboard' },
+  { name: 'Projects', icon: <Kanban size='28px' />, route: '/projects' },
 ];
 
 export function TopSideClose(props: Props) {
@@ -19,7 +19,7 @@ export function TopSideClose(props: Props) {
         <AngularLogo size='36px' color='#f10' />
         <SidebarTrigger {...props} />
       </VStack>
-      <VStack p='8px'>
+      <VStack as='nav' p='8px'>
         {items.map((item) => (
           <TopSideItem key={item.name} {...item} />
         ))}
