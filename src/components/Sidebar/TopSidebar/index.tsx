@@ -12,7 +12,7 @@ export function SidebarTopSide({ open, onClick }: Props) {
     <Flex
       flexDir={open ? 'row' : 'column'}
       justifyContent={open ? 'space-between' : ''}
-      p={open ? '4px' : '0px'}
+      p='4px'
       w='100%'
       alignItems='center'
       overflow='hidden'

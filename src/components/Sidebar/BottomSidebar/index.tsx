@@ -8,7 +8,7 @@ interface Props {
 
 export function SidebarBottomSide({ open }: Props) {
   return (
-    <Flex flexDir='column' p={open ? '4px' : '0px'} w='100%' overflow='hidden'>
+    <Flex flexDir='column' p='4px' w='100%' overflow='hidden'>
       {open ? <BottomSidebarOpen open={open} /> : <BottomSidebarClose open={open} />}
     </Flex>
   );
