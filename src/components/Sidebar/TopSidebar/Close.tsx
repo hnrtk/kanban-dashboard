@@ -9,8 +9,8 @@ interface Props {
   onClick: () => void;
 }
 const items = [
-  { name: 'Dashboard', icon: <SquaresFour size='28px' /> },
-  { name: 'Projects', icon: <Kanban size='28px' /> },
+  { name: 'Dashboard', icon: <SquaresFour size='28px' />, route: '/dashboard' },
+  { name: 'Projects', icon: <Kanban size='28px' />, route: '/projects' },
 ];
 
 export function TopSideClose(props: Props) {

@@ -1,13 +1,15 @@
-import { Avatar, Flex, VStack } from '@chakra-ui/react';
-import { SidebarThemeSwitcher } from '../ThemeSwitcher';
+import { Flex } from '@chakra-ui/react';
+import { BottomSidebarClose } from './BottomSidebarClose';
+import { BottomSidebarOpen } from './BottomSidebarOpen';
 
-export function SidebarBottomSide() {
+interface Props {
+  open: boolean;
+}
+
+export function SidebarBottomSide({ open }: Props) {
   return (
-    <Flex flexDir='column'>
-      <VStack spacing={4}>
-        <SidebarThemeSwitcher />
-        <Avatar src='https://bit.ly/broken-link' name='Henry Gabriel' w='40px' h='40px' />
-      </VStack>
+    <Flex flexDir='column' p='4px' w='100%' overflow='hidden'>
+      {open ? <BottomSidebarOpen open={open} /> : <BottomSidebarClose open={open} />}
     </Flex>
   );
 }
