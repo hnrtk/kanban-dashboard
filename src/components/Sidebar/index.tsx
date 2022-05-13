@@ -15,7 +15,7 @@ export function Sidebar() {
   return (
     <SidebarContainer open={open}>
       <SidebarTopSide open={open} onClick={handleSidebar} />
-      <SidebarBottomSide open={open} />
+      <SidebarBottomSide />
     </SidebarContainer>
   );
 }
