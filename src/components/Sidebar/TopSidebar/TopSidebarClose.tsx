@@ -14,12 +14,12 @@ const items = [
 
 export function TopSideClose(props: Props) {
   return (
-    <VStack w='100%' h='100%' spacing={3}>
-      <AngularLogo size='58px' color='#f10' />
-      <Divider orientation='horizontal' />
-      <SidebarTrigger {...props} />
-      <Divider orientation='horizontal' />
-      <VStack as='nav' h='100%' w='100%'>
+    <VStack>
+      <VStack divider={<Divider orientation='horizontal' />}>
+        <AngularLogo size='36px' color='#f10' />
+        <SidebarTrigger {...props} />
+      </VStack>
+      <VStack p='6px'>
         {items.map((item) => (
           <TopSideItem key={item.name} {...item} />
         ))}

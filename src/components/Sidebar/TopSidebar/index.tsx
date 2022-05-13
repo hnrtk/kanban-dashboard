@@ -1,6 +1,6 @@
 import { Flex } from '@chakra-ui/react';
-import { TopSideClose } from './Close';
-import { TopSideOpen } from './Open';
+import { TopSideClose } from './TopSidebarClose';
+import { TopSideOpen } from './TopSidebarOpen';
 
 interface Props {
   open: boolean;

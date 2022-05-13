@@ -15,7 +15,7 @@ export function TopSideItem({ name, icon }: Props) {
       borderRadius='8px'
       _hover={{
         background: 'blue.500',
-        transform: 'scale(1.1)',
+        transform: 'scale(1.2)',
       }}
     />
   );
