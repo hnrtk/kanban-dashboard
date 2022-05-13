@@ -1,4 +1,4 @@
-import { Flex, VStack, Avatar } from '@chakra-ui/react';
+import { Avatar, Flex, Stack } from '@chakra-ui/react';
 import { SidebarThemeSwitcher } from '../ThemeSwitcher';
 
 interface Props {
@@ -7,11 +7,11 @@ interface Props {
 
 export function BottomSidebarClose(props: Props) {
   return (
-    <Flex flexDir='column'>
-      <VStack spacing={4}>
-        <SidebarThemeSwitcher {...props} />
+    <Stack spacing={4} margin='0 auto'>
+      <SidebarThemeSwitcher {...props} />
+      <Flex w='100%' justifyContent='center'>
         <Avatar src='https://bit.ly/broken-link' name='Henry Gabriel' size='sm' />
-      </VStack>
-    </Flex>
+      </Flex>
+    </Stack>
   );
 }

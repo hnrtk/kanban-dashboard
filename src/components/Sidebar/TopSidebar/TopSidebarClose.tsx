@@ -19,7 +19,7 @@ export function TopSideClose(props: Props) {
         <AngularLogo size='36px' color='#f10' />
         <SidebarTrigger {...props} />
       </VStack>
-      <VStack p='6px'>
+      <VStack p='8px'>
         {items.map((item) => (
           <TopSideItem key={item.name} {...item} />
         ))}
