@@ -1,12 +1,4 @@
-import {
-  Flex,
-  IconButton,
-  Text,
-  Tooltip,
-  Link as ChakraUILink,
-  Stack,
-  Icon,
-} from '@chakra-ui/react';
+import { IconButton, Text, Tooltip, Link as ChakraUILink, Stack } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
 interface Props {
@@ -32,14 +24,15 @@ export function TopSideItem({ open, name, icon, route }: Props) {
         transition: 'all 0.4s',
       }}
     >
-      {icon}
-      <Text whiteSpace='nowrap'>{name}</Text>
+      <ChakraUILink as={Link} to={route}>
+        {icon}
+        <Text whiteSpace='nowrap'>{name}</Text>
+      </ChakraUILink>
     </Stack>
   ) : (
     <Tooltip label={name} hasArrow placement='right' aria-label={name} gutter={24}>
-      <Link to={route}>
+      <ChakraUILink as={Link} to={route}>
         <IconButton
-          as='a'
           aria-label={name}
           icon={icon}
           background='none'
@@ -49,7 +42,7 @@ export function TopSideItem({ open, name, icon, route }: Props) {
             transform: 'scale(1.2)',
           }}
         />
-      </Link>
+      </ChakraUILink>
     </Tooltip>
   );
 }

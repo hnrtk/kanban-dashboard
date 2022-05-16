@@ -24,7 +24,7 @@ export function TopSideClose(props: Props) {
       </VStack>
       <VStack as='nav' p='8px'>
         {items.map((item) => (
-          <TopSideItem key={item.name} {...item} />
+          <TopSideItem key={item.name} open={props.open} {...item} />
         ))}
       </VStack>
     </VStack>
