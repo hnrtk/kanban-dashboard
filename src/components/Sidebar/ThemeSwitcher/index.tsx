@@ -19,12 +19,14 @@ export function SidebarThemeSwitcher(props: ColorModeSwitcherProps) {
   return (
     <Flex alignItems='center'>
       {props.open ? (
-        <HStack>
+        <HStack
+          onClick={toggleColorMode}
+          cursor="pointer"
+        >
           <IconButton
             background='none'
             minW='32px'
             _hover={{ background: 'none' }}
-            onClick={toggleColorMode}
             icon={<SwitchIcon size='28px' />}
             aria-label={`Switch to ${text} mode`}
             {...props}

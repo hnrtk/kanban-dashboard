@@ -10,7 +10,6 @@ interface Props {
 export function SidebarTopSide({ open, onClick }: Props) {
   return (
     <Flex
-      flexDir={open ? 'row' : 'column'}
       justifyContent={open ? 'space-between' : ''}
       p='4px'
       w='100%'

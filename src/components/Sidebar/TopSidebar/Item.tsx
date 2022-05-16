@@ -1,14 +1,41 @@
-import { IconButton, Tooltip } from '@chakra-ui/react';
+import {
+  Flex,
+  IconButton,
+  Text,
+  Tooltip,
+  Link as ChakraUILink,
+  Stack,
+  Icon,
+} from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
 interface Props {
+  open: boolean;
   name: string;
   icon: React.ReactElement;
   route: string;
 }
 
-export function TopSideItem({ name, icon, route }: Props) {
-  return (
+export function TopSideItem({ open, name, icon, route }: Props) {
+  return open ? (
+    <Stack
+      direction='row'
+      alignItems='center'
+      w='100%'
+      bgColor='blue.700'
+      borderRadius='12px'
+      py='6px'
+      px='12px'
+      cursor='pointer'
+      _hover={{
+        backgroundColor: 'blue.800',
+        transition: 'all 0.4s',
+      }}
+    >
+      {icon}
+      <Text whiteSpace='nowrap'>{name}</Text>
+    </Stack>
+  ) : (
     <Tooltip label={name} hasArrow placement='right' aria-label={name} gutter={24}>
       <Link to={route}>
         <IconButton
